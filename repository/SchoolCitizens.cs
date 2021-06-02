@@ -41,11 +41,8 @@ namespace oop.repository
             get
             {
                 int number = 0;
-                foreach (Human human in students)
-                { 
+                // R.01 Pótolja a hiányzó kódot
 
-                    number += 1;
-                }
                 return number;
             }
         }
@@ -59,14 +56,8 @@ namespace oop.repository
             get
             {
                 int selectedStudentNumber = 0;
-                foreach (Human human in students)
-                {
-                    if (human is Student)
-                    {
-                        if (human.Selected)
-                            selectedStudentNumber += 1;
-                    }
-                }
+                // R.02 Pótolja a hiányzó kódot
+
                 return selectedStudentNumber;
             }
         }
@@ -79,14 +70,12 @@ namespace oop.repository
         {
             get
             {
-                double sumOfGradePointAvarage = 0;
+                double sumOfGradePointAvarage = 0;                
                 foreach (Human human in students)
                 {
                     if (human is Student)
                     {
-                        Student s = human as Student;
-                        if (human.Selected)
-                            sumOfGradePointAvarage += s.GradePointAvarage;
+                        // R.03 Pótolja a hiányzó kódot
                     }
                 }
                 return sumOfGradePointAvarage / SelectedStudentNumber;

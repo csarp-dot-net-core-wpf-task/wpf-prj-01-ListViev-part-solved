@@ -65,9 +65,7 @@ namespace oop.model
         /// </summary>
         protected Human()
         {
-            name = string.Empty;
-            image = string.Empty;
-            Selected = false;
+            // M.01 Pótolja a hiányzó kódot
         }
 
         /// <summary>
@@ -77,9 +75,7 @@ namespace oop.model
         /// <param name="image">Az ember fényképének útvonala</param>
         protected Human(string name, string image)
         {
-            this.name = name;
-            this.image = image;
-            Selected = false;
+            // M.01 Pótolja a hiányzó kódot
         }
 
     }

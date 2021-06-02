@@ -36,8 +36,9 @@ namespace grprj_01_02_01_Ember_Tanar_Diak_WPF
 
         private void btStatistics_Click(object sender, RoutedEventArgs e)
         {
-            tbNumberOfSelectedStudent.Text = sc.SelectedStudentNumber + " fő.";
-            tbAvarageOfSelectedStudent.Text = Math.Round(sc.SelectedStudentAvarageOfGradePointAvarage,2).ToString();
+            // V.02 Pontosítsa a vezérlők szövegeit, hogy értékes adatokat jelenítsenek meg
+            tbNumberOfSelectedStudent.Text = string.Empty;
+            tbAvarageOfSelectedStudent.Text = string.Empty;
         }
     }
 }

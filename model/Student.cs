@@ -51,8 +51,7 @@ namespace oop.model
         public Student(string name, string image, string classId, double gradePointAvarage)
             : base(name, image)
         {
-            this.classId = classId;
-            this.gradePointAvarage = gradePointAvarage;
+            // M.03 Pótolja a hiányzó kódot
         }
     }
 }

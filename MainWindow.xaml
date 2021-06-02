@@ -12,17 +12,18 @@
             <ListView x:Name="lvStudents" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
+                        <!-- V.01 Pótolja a hiányzó kötéseket -->
                         <StackPanel Orientation="Horizontal">
                             <StackPanel Orientation="Vertical" >
-                                <CheckBox x:Name="cboSelected" IsChecked="{Binding Selected}" />
+                                <CheckBox x:Name="cboSelected" IsChecked="{Binding}" />
                             </StackPanel>
                             <StackPanel Orientation="Vertical" >
                                 <Image Source="{Binding Image}" Margin="2 2 2 2"/>
                             </StackPanel>
                             <StackPanel Orientation="Vertical" >
-                                <TextBlock x:Name="tbName" Text="{Binding Name}"></TextBlock>
-                                <TextBlock x:Name="tbClassId" Text="{Binding ClassId}"></TextBlock>
-                                <TextBlock x:Name="tbGradePointAvarage" Text="{Binding GradePointAvarage}"></TextBlock>
+                                <TextBlock x:Name="tbName" Text="{Binding}"></TextBlock>
+                                <TextBlock x:Name="tbClassId" Text="{Binding}"></TextBlock>
+                                <TextBlock x:Name="tbGradePointAvarage" Text="{Binding}"></TextBlock>
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>
